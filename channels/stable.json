@@ -1,37 +1,37 @@
 {
   "schema": 1,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minecraft": "1.21.11",
   "files": [
     {
       "name": "atmospherics-fabric-1.21.11-1.3.3.jar",
       "size": 278095,
       "sha256": "363a9de4236afaf9d9784cfa85bd6a384ddeb7722ab4b9edb5f580bd57d5e173",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.1/atmospherics-fabric-1.21.11-1.3.3.jar"
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.2/atmospherics-fabric-1.21.11-1.3.3.jar"
     },
     {
       "name": "fabric-api-0.141.6+1.21.11.jar",
       "size": 2426039,
       "sha256": "bdff7fd7e220085cfad2ff9b1f40dde6534ae0b96cf378f97a374bc54cb9ed0f",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.1/fabric-api-0.141.6+1.21.11.jar"
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.2/fabric-api-0.141.6+1.21.11.jar"
     },
     {
-      "name": "goydasmp-menu-1.0.1.jar",
-      "size": 2229252,
-      "sha256": "62a0ec0da0c272345558e47cc14d2738a33efe5fe4b3d71d0a648bcd1c4b17b8",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.1/goydasmp-menu-1.0.1.jar"
+      "name": "goydasmp-menu-1.0.2.jar",
+      "size": 2296282,
+      "sha256": "22881dba1c621230cbb55a4c5e2526f9637b08d224992fe321fae0ca30065cb8",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.2/goydasmp-menu-1.0.2.jar"
     },
     {
       "name": "iris-fabric-1.10.7+mc1.21.11.jar",
       "size": 2807547,
       "sha256": "58c55da18189c91a49f847d3cee451633a23b575fb69c0c5b65ddb274436cb19",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.1/iris-fabric-1.10.7+mc1.21.11.jar"
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.2/iris-fabric-1.10.7+mc1.21.11.jar"
     },
     {
       "name": "sodium-fabric-0.8.7+mc1.21.11.jar",
       "size": 1870358,
       "sha256": "c08fae86b350aaa8a8f37e7347929df38f01cc2348cf31c322615564bdc53983",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.1/sodium-fabric-0.8.7+mc1.21.11.jar"
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.2/sodium-fabric-0.8.7+mc1.21.11.jar"
     }
   ]
 }
