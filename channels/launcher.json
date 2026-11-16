@@ -1,7 +1,7 @@
 {
-  "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/launcher-v0.1.9/app.asar",
-  "version": "0.1.9",
-  "sha256": "7c019884f167c2fa4a918cddaeb42c0bb5c4b3e98c30dc20d9f379e2967b9f06",
-  "size": 36362303,
-  "schema": 1
+  "schema": 1,
+  "version": "0.1.11",
+  "size": 34411839,
+  "sha256": "19fd8705eb82be03430462f3f56cc689caa76330edaf1b8ef070a0bd033f4fe0",
+  "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/launcher-v0.1.11/app.asar"
 }
