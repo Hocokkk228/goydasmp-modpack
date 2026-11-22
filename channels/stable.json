@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "version": "0.1.16",
+  "version": "0.1.17",
   "minecraft": "1.21.11",
   "files": [
     {
-      "name": "atmospherics-fabric-1.21.11-1.3.4.jar",
-      "size": 278139,
-      "sha256": "1502937701628af2e5aeccd16d706401f5b82cf715b3e053073dec5536550e1c",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.10/atmospherics-fabric-1.21.11-1.3.4.jar"
+      "name": "atmospherics-fabric-1.21.11-1.3.5.jar",
+      "size": 292683,
+      "sha256": "b1eafe8fcd068f2533faa7a1aad03fb18b0939294fb2d672a784c8ec733327b7",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.17/atmospherics-fabric-1.21.11-1.3.5.jar"
     },
     {
       "name": "fabric-api-0.141.6+1.21.11.jar",
@@ -16,10 +16,10 @@
       "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.3/fabric-api-0.141.6+1.21.11.jar"
     },
     {
-      "name": "goydasmp-menu-1.0.10.jar",
-      "size": 5767966,
-      "sha256": "f0e974bb2e398d399d093d2fd1080105c6db18ce289d4bc32e848ecc4e0d913a",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.16/goydasmp-menu-1.0.10.jar"
+      "name": "goydasmp-menu-1.0.11.jar",
+      "size": 5770908,
+      "sha256": "a13591bb2cd2cfb413d063ef7292eee2e1460043f5c122817898dd160168d2f9",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.17/goydasmp-menu-1.0.11.jar"
     },
     {
       "name": "iris-fabric-1.10.7+mc1.21.11.jar",
@@ -82,6 +82,12 @@
       "size": 808818,
       "sha256": "b2b1bbd747e73074bb22eb73e6718337fab8174b5046b262cdf1e85e6b750518",
       "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/itjOkghQ/entity_texture_features-7.2.7-1.21.11-fabric.jar"
+    },
+    {
+      "name": "AnimatedTyping-1.21.11+1.0.0.jar",
+      "size": 27221,
+      "sha256": "160dc53d349753ac20cbee493b34853d506983dfd147cd880274308d6eb22b68",
+      "url": "https://cdn.modrinth.com/data/r8GP0gUl/versions/WTVTTbMr/AnimatedTyping-1.21.11%2B1.0.0.jar"
     }
   ]
 }
