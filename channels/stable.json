@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "version": "0.1.18",
+  "version": "0.1.19",
   "minecraft": "1.21.11",
   "files": [
     {
-      "name": "atmospherics-fabric-1.21.11-1.3.6.jar",
-      "size": 217255,
-      "sha256": "5eb8613bb4d12abb704fa406620f91b969b7aca39fd4013d50266544144ad137",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.18/atmospherics-fabric-1.21.11-1.3.6.jar"
+      "name": "atmospherics-fabric-1.21.11-1.3.7.jar",
+      "size": 217920,
+      "sha256": "612458cac6708b92a8491d89ac5235c84de218f8ee83de69821e27fb82d55690",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.19/atmospherics-fabric-1.21.11-1.3.7.jar"
     },
     {
       "name": "fabric-api-0.141.6+1.21.11.jar",
@@ -16,10 +16,10 @@
       "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.3/fabric-api-0.141.6+1.21.11.jar"
     },
     {
-      "name": "goydasmp-menu-1.0.11.jar",
-      "size": 5770908,
-      "sha256": "a13591bb2cd2cfb413d063ef7292eee2e1460043f5c122817898dd160168d2f9",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.17/goydasmp-menu-1.0.11.jar"
+      "name": "goydasmp-menu-1.0.12.jar",
+      "size": 5773580,
+      "sha256": "107e03c47e075fbfd0e434a34041d371d796bd83797718cf8ad324a0535e4060",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.19/goydasmp-menu-1.0.12.jar"
     },
     {
       "name": "iris-fabric-1.10.7+mc1.21.11.jar",
