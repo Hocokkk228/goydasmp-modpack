@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "0.1.20",
+  "version": "0.1.22",
   "minecraft": "1.21.11",
   "files": [
     {
@@ -56,6 +56,12 @@
       "size": 147306,
       "sha256": "bb25d5691e09c4a18d7b5b0953325792768f45827af00d63d101d3237a748372",
       "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.12/throwing-disc-1.1.2%2Bmc1.21.11.jar"
+    },
+    {
+      "name": "goydasmp-tv-0.1.0.jar",
+      "size": 136244,
+      "sha256": "0d2839eb6185494160cba118859bff965ad3bce83733fe92cc5fce80ff71be06",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.22/goydasmp-tv-0.1.0.jar"
     }
   ],
   "modrinthFiles": [
@@ -88,6 +94,42 @@
       "size": 27221,
       "sha256": "160dc53d349753ac20cbee493b34853d506983dfd147cd880274308d6eb22b68",
       "url": "https://cdn.modrinth.com/data/r8GP0gUl/versions/WTVTTbMr/AnimatedTyping-1.21.11%2B1.0.0.jar"
+    },
+    {
+      "name": "variants-cit-5.8.1+1.21.11.jar",
+      "size": 422013,
+      "sha256": "6afb0894cb86d28a6c6c98c0b564a5db78d81431b36774afe84035d584209016",
+      "url": "https://cdn.modrinth.com/data/jURjbCaq/versions/OziihA6n/variants-cit-5.8.1%2B1.21.11.jar"
+    },
+    {
+      "name": "skyboxify-3.4+1.21.11-fabric.jar",
+      "size": 306901,
+      "sha256": "17020ec5bf3f495f18626b882c03a207b2f93da7b89e6f4b96249079a85494d1",
+      "url": "https://cdn.modrinth.com/data/DWuwk8aA/versions/kANba6Nw/skyboxify-3.4%2B1.21.11-fabric.jar"
+    },
+    {
+      "name": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+      "size": 1126948,
+      "sha256": "49c279bc28c80ca17d6c21c3dd299ec1c115b892272f21b3f034ed782829babd",
+      "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/pHWDw3Vc/yet_another_config_lib_v3-3.8.2%2B1.21.11-fabric.jar"
+    },
+    {
+      "name": "mcw-holidays-1.1.2-mc1.21.11fabric.jar",
+      "size": 983913,
+      "sha256": "07c06604195f997bb21a0ce65599fedab906f040c356c59752068d954d044806",
+      "url": "https://cdn.modrinth.com/data/rH20L2Lp/versions/kAEQwCkH/mcw-holidays-1.1.2-mc1.21.11fabric.jar"
+    },
+    {
+      "name": "watermedia-3.0.2.jar",
+      "size": 3390417,
+      "sha256": "0091489258b40ce1d85318baf2f648da468a69020a0b6f8dc2af0271de208ebd",
+      "url": "https://cdn.modrinth.com/data/G922NeHS/versions/ALN6z4Xm/watermedia-3.0.2.jar"
+    },
+    {
+      "name": "watermedia_binaries-3.0.2.jar",
+      "size": 152312971,
+      "sha256": "7ca867ccfa7848e95d05f1be796c338b408e1b382a24a1c3a1c9b3219b4f538c",
+      "url": "https://cdn.modrinth.com/data/4997XcoK/versions/opOgOBSq/watermedia_binaries-3.0.2.jar"
     }
   ]
 }
