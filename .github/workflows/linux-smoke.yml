@@ -9,13 +9,15 @@ jobs:
     steps:
       - name: Install launcher and OS runtime dependencies
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq xvfb xauth libgtk-3-0t64 libnss3 libasound2t64 libgbm1 libgl1 libgl1-mesa-dri
+          if ! command -v xvfb-run >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq xvfb xauth
+          fi
           curl -fsSLo "$RUNNER_TEMP/install-linux.sh" https://github.com/Hocokkk228/goydasmp-modpack/releases/download/launcher-v0.1.17/install-linux.sh
           sudo sh "$RUNNER_TEMP/install-linux.sh" --system
           grep -q '^Exec="/opt/goydasmp/0.1.17/goydasmp"$' /usr/local/share/applications/goydasmp.desktop
           ! ldd /usr/local/bin/goydasmp | grep 'not found'
-          xvfb-run -a /usr/local/bin/goydasmp --version
+          test "$(stat -c '%a:%u' /opt/goydasmp/0.1.17/chrome-sandbox)" = 4755:0
       - name: Start desktop app and Minecraft
         env:
           VP_TEST_HOME: /tmp/goydasmp-linux-smoke
