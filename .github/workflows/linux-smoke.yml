@@ -1,0 +1,62 @@
+name: GoydaSMP Linux installation smoke
+on: push
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Install launcher and OS runtime dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb xauth libgtk-3-0t64 libnss3 libasound2t64 libgbm1 libgl1 libgl1-mesa-dri
+          curl -fsSLo "$RUNNER_TEMP/install-linux.sh" https://github.com/Hocokkk228/goydasmp-modpack/releases/download/launcher-v0.1.17/install-linux.sh
+          sudo sh "$RUNNER_TEMP/install-linux.sh" --system
+          grep -q '^Exec="/opt/goydasmp/0.1.17/goydasmp"$' /usr/local/share/applications/goydasmp.desktop
+          ! ldd /usr/local/bin/goydasmp | grep 'not found'
+          xvfb-run -a /usr/local/bin/goydasmp --version
+      - name: Start desktop app and Minecraft
+        env:
+          VP_TEST_HOME: /tmp/goydasmp-linux-smoke
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: |
+          export PATH="${JAVA_HOME_21_X64:+$JAVA_HOME_21_X64/bin:}$PATH"
+          xvfb-run -a /usr/local/bin/goydasmp --disable-gpu --remote-debugging-port=9222 >"$RUNNER_TEMP/launcher.log" 2>&1 &
+          trap 'cat "$RUNNER_TEMP/launcher.log"; tail -100 "$VP_TEST_HOME/instances/goydasmp/launcher-game.log" 2>/dev/null || true' EXIT
+          node --experimental-websocket --input-type=module <<'JS'
+          import {setTimeout as delay} from 'node:timers/promises';
+          import assert from 'node:assert/strict';
+          let page;
+          for(let attempt=0;attempt<80&&!page;attempt++){
+            try{
+              const tabs=await (await fetch('http://127.0.0.1:9222/json/list')).json();
+              page=tabs.find(tab=>tab.url.endsWith('/app/index.html'));
+            }catch{}
+            if(!page)await delay(1000);
+          }
+          assert.ok(page,'Launcher window loaded');
+          const ws=new WebSocket(page.webSocketDebuggerUrl);
+          await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true});});
+          const status=await new Promise(resolve=>{
+            ws.onmessage=({data})=>resolve(JSON.parse(data));
+            ws.send(JSON.stringify({id:1,method:'Runtime.evaluate',params:{returnByValue:true,awaitPromise:true,expression:`(async()=>{
+              const api=window.goydasmp;
+              const state=await api.state();
+              const settings=await api.settings({serverAddress:'127.0.0.1:25590',nickname:'LinuxSmoke',ram:3});
+              document.querySelector('#play-button').click();
+              return {version:state.version,address:settings.serverAddress};
+            })()`}}));
+          });
+          assert.deepEqual(status.result?.result?.value,{version:'0.1.17',address:'127.0.0.1:25590'});
+          ws.close();
+          console.log('LINUX_UI_PASSED');
+          JS
+          for attempt in $(seq 1 240); do
+            if grep -q 'Connecting to 127.0.0.1, 25590' "$VP_TEST_HOME/instances/goydasmp/launcher-game.log" 2>/dev/null; then
+              echo 'LINUX_MINECRAFT_PASSED'
+              exit 0
+            fi
+            sleep 2
+          done
+          exit 1
