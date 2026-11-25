@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "0.1.25",
+  "version": "0.1.26",
   "minecraft": "1.21.11",
   "files": [
     {
@@ -64,10 +64,10 @@
       "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.25/goydasmp-menu-1.0.13.jar"
     },
     {
-      "name": "goydasmp-bar-fabric-0.1.1.jar",
-      "size": 510383,
-      "sha256": "beac4114d0b657f9aab4c3a7f0d077d300d6fdc36fd433018dcbf07a949dafd8",
-      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.25/goydasmp-bar-fabric-0.1.1.jar"
+      "name": "goydasmp-bar-fabric-0.1.2.jar",
+      "size": 461407,
+      "sha256": "0a1fd1bc5a61c51e846ddc7068c8982aceff8e7ba7f9cdae3f90dc2006d937e0",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.26/goydasmp-bar-fabric-0.1.2.jar"
     }
   ],
   "modrinthFiles": [
