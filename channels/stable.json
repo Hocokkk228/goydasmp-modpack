@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "0.1.32",
+  "version": "0.1.33",
   "minecraft": "1.21.11",
   "files": [
     {
@@ -86,6 +86,48 @@
       "size": 7129857,
       "sha256": "973bd0e26affa9b841afcb7da9ee4183ab3088766852cf8fa646f825c495e09b",
       "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.29/refurbished_furniture-fabric-1.21.11-1.0.23.jar"
+    },
+    {
+      "name": "goydasmp-pc-1.0.0.jar",
+      "size": 2019219,
+      "sha256": "7820d2bde9f6a0cc1180323041474ba664cf898ee892a1414b18b728ea0b5857",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/goydasmp-pc-1.0.0.jar"
+    },
+    {
+      "name": "punchy-3.2b-optimized-1.21.11.jar",
+      "size": 4465590,
+      "sha256": "ba6c8e56e06d63482e596ac89a2d0ab0bb27db72b243866351b644f89de8827b",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/punchy-3.2b-optimized-1.21.11.jar"
+    },
+    {
+      "name": "punchy-moves-1.0.9b-optimized-1.21.11.jar",
+      "size": 1867488,
+      "sha256": "ebada6c6922b79b001d944df6ce41193b34e05a07affe6569cd9294d9e8057e6",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/punchy-moves-1.0.9b-optimized-1.21.11.jar"
+    },
+    {
+      "name": "ferritecore-8.2.0-fabric.jar",
+      "size": 80138,
+      "sha256": "f76bd760cbf48280cc7c43180f5089a46235fa24d934a8acf3da04a664c2c715",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/ferritecore-8.2.0-fabric.jar"
+    },
+    {
+      "name": "lithium-fabric-0.21.4+mc1.21.11.jar",
+      "size": 900462,
+      "sha256": "5135c41da5b43cbdcb29424bde65195143ac4084e23834c8eac065942201c78b",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/lithium-fabric-0.21.4+mc1.21.11.jar"
+    },
+    {
+      "name": "entityculling-fabric-1.12.2-mc1.21.11.jar",
+      "size": 1543912,
+      "sha256": "2e887c3fb41e57956b5bab2dbcb2bfac9b8c7e223a1814288e91cbe3ad7cb276",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/entityculling-fabric-1.12.2-mc1.21.11.jar"
+    },
+    {
+      "name": "ImmediatelyFast-Fabric-1.14.3+1.21.11.jar",
+      "size": 302709,
+      "sha256": "c6e939744ed80345a1a70c351c481b8832d33970d6574b8d444dfe750abc2a86",
+      "url": "https://github.com/Hocokkk228/goydasmp-modpack/releases/download/v0.1.33/ImmediatelyFast-Fabric-1.14.3+1.21.11.jar"
     }
   ],
   "modrinthFiles": [
